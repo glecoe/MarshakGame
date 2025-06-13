@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("arrow_back.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("marshak_teremok.jpg")]
 
 
