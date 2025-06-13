@@ -1,0 +1,110 @@
+﻿<Window x:Class="_12Month_WPF_1.Magic_Story_Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_12Month_WPF_1"
+        mc:Ignorable="d"
+        Title="Magic_Story_Window" 
+        WindowState="Maximized"
+        WindowStyle="None"
+        Background="#FFB610D2">
+
+    <Viewbox Stretch="Uniform">
+        <Grid Width="1920" Height="1080" Background="#FFB610D2">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="74"/>
+
+                <RowDefinition Height="Auto"/>
+
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70"/>
+
+                <ColumnDefinition Width="Auto"/>
+
+                <ColumnDefinition/>
+
+                <ColumnDefinition Width="Auto"/>
+
+                <ColumnDefinition/>
+
+                <ColumnDefinition Width="128"/>
+
+                <ColumnDefinition Width="70"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Content="MAGIC STORY" 
+                   Grid.Row="1" Grid.Column="3"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="50" 
+                   Background="White" 
+                   HorizontalContentAlignment="Center" 
+                   VerticalContentAlignment="Center" 
+                   FontWeight="Bold"
+                   MinWidth="400"
+                   Padding="20,10"/>
+
+            <Button x:Name="Back_Button" 
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="128" 
+                    Height="128"
+                    Click="Back_Button_Click" 
+                    BorderThickness="0"
+                    Cursor="Hand">
+                <Image Source="/Arrow_Back.png" 
+                       Stretch="Uniform"
+                       Width="128"
+                       Height="128"/>
+            </Button>
+
+            <Grid Grid.Row="2" Grid.ColumnSpan="7" Margin="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" 
+                        Content="История 1" 
+                        FontSize="30" 
+                        Margin="20"
+                        Background="#AAFFFFFF"
+                        Cursor="Hand"/>
+
+                <Button Grid.Row="0" Grid.Column="1" 
+                        Content="История 2" 
+                        FontSize="30" 
+                        Margin="20"
+                        Background="#AAFFFFFF"
+                        Cursor="Hand"/>
+
+                <Button Grid.Column="2" 
+                        Content="История 3" 
+                        FontSize="30" 
+                        Margin="20,20,20,20"
+                        Background="#AAFFFFFF"
+                        Cursor="Hand"/>
+
+                <Button Grid.Column="3" 
+                        Content="История 4" 
+                        FontSize="30" 
+                        Margin="20,20,20,20"
+                        Background="#AAFFFFFF"
+                        Cursor="Hand"/>
+            </Grid>
+        </Grid>
+    </Viewbox>
+</Window> 
