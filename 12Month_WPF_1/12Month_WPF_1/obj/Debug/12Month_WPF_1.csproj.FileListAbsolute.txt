@@ -1,0 +1,63 @@
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe.config
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.pdb
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.AssemblyReference.cache
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.g.cs
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\App.g.cs
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.cache
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.lref
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.baml
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.g.resources
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\_12Month_WPF_1.Properties.Resources.resources
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.GenerateResource.cache
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.CoreCompileInputs.cache
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.exe
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.pdb
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.g.cs
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.baml
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.g.cs
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.baml
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.g.cs
+C:\Users\Mopik\source\repos\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.baml
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe.config
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.pdb
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.AssemblyReference.cache
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.g.cs
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.g.cs
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.g.cs
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.g.cs
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\App.g.cs
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.cache
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.lref
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.baml
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.baml
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.baml
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.baml
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.g.resources
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\_12Month_WPF_1.Properties.Resources.resources
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.GenerateResource.cache
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.CoreCompileInputs.cache
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.exe
+C:\Users\Mopik\Documents\GitHub\MarshakGame\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.pdb
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe.config
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.exe
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\bin\Debug\12Month_WPF_1.pdb
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.AssemblyReference.cache
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.g.cs
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.g.cs
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.g.cs
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.g.cs
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\App.g.cs
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.cache
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1_MarkupCompile.lref
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Game_Window.baml
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Magic_Story_Window.baml
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\MainWindow.baml
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\Settings_Window.baml
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.g.resources
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\_12Month_WPF_1.Properties.Resources.resources
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.GenerateResource.cache
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.csproj.CoreCompileInputs.cache
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.exe
+C:\Users\Егор Андронов\Desktop\12Month_WPF_1\12Month_WPF_1\obj\Debug\12Month_WPF_1.pdb
