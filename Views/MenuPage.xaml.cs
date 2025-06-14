@@ -12,8 +12,10 @@ namespace MarshakGame.Views
 
         private void StartGame_Click(object sender, RoutedEventArgs e)
         {
-            // Здесь пойдёт навигация к StoryWindow или StoryPage
-            NavigationService.Navigate(new StoryPage());
+            if (Window.GetWindow(this) is MainWindow main)
+            {
+                main.NavigateTo(new GamePage());
+            }
         }
 
         private void ShowWorks_Click(object sender, RoutedEventArgs e)

@@ -10,6 +10,9 @@
     <Compile Update="Views\AboutMarshakPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\MagicWorksPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -28,6 +31,9 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\AboutMarshakPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GamePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\MagicWorksPage.xaml">
