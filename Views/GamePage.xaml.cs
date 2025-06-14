@@ -74,7 +74,7 @@ namespace MarshakGame.Views
                 },
                 new Scene
                 {
-                    ImagePath = "Assets/Images/scene10.png",
+                    ImagePath = "Assets/Images/mau.png",
                     Text = "Замерзшей девочке было очень страшно в темном лесу. Вдруг вдалеке ей почудился золотой огонек, и дымком теплым как будто запахло."
                 },
                 new Scene
@@ -92,13 +92,23 @@ namespace MarshakGame.Views
 
         private void ShowScene(int index)
         {
-            if (index < 0 || index >= scenes.Count) return;
+            if (index < 0 || index >= scenes.Count)
+                return;
 
             var scene = scenes[index];
 
-            BackgroundImage.Source = new BitmapImage(new System.Uri(System.IO.Path.GetFullPath(scene.ImagePath)));
-            DialogueText.Text = scene.Text;
+            try
+            {
+                string fullPath = System.IO.Path.GetFullPath(scene.ImagePath);
+                BackgroundImage.Source = new BitmapImage(new Uri(fullPath));
+                DialogueText.Text = scene.Text;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при загрузке сцены:\n{ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
+
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {

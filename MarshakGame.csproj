@@ -9,9 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\10.png" />
     <None Remove="Assets\Images\AboutMarshakBackground.png" />
     <None Remove="Assets\Images\book_background.jpg" />
     <None Remove="Assets\Images\MagicWorksImage.jpg" />
+    <None Remove="Assets\Images\mau.png" />
     <None Remove="Assets\Images\scene1.png" />
     <None Remove="Assets\Images\scene10.png" />
     <None Remove="Assets\Images\scene11.png" />
@@ -34,6 +36,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\MagicWorksImage.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\mau.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\scene1.png">
