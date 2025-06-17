@@ -18,5 +18,7 @@ namespace MarshakGame.ViewModels
         {
             // Логика перехода между кадрами
         }
+
+
     }
 }
