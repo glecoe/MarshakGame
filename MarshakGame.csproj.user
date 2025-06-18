@@ -10,6 +10,12 @@
     <Compile Update="Views\AboutMarshakPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\FireGamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\FlowerGamePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\GamePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -31,6 +37,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\AboutMarshakPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FireGamePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\FlowerGamePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GamePage.xaml">

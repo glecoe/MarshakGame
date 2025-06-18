@@ -7,6 +7,10 @@ namespace MarshakGame.Views
 {
     public partial class GamePage : Page
     {
+        public int CurrentSceneIndex { get; set; } = 0;
+
+        public static int SavedSceneIndex { get; set; } = 0;
+
         private class Scene
         {
             public string ImagePath { get; set; }
@@ -14,14 +18,15 @@ namespace MarshakGame.Views
         }
 
         private List<Scene> scenes;
-        private int currentSceneIndex = 0;
 
         public GamePage()
         {
             InitializeComponent();
+            CurrentSceneIndex = SavedSceneIndex; // Восстанавливаем прогресс
             LoadScenes();
-            ShowScene(0);
+            ShowScene(CurrentSceneIndex);
         }
+
 
         private void LoadScenes()
         {
@@ -86,6 +91,26 @@ namespace MarshakGame.Views
                 {
                     ImagePath = "Assets/Images/scene12.png",
                     Text = "Набравшись смелости, девочка подошла к ним и рассказала, что злая Мачеха заставила ее пойти в лес и собрать подснежники. Чтобы помочь ей, братья решили на часок уступить место Апрелю."
+                },
+                new Scene
+                {
+                    ImagePath = "Assets/Images/scene13.png",
+                    Text = "Чтобы помочь ей, братья решили на часок уступить место Апрелю."
+                },
+                new Scene
+                {
+                    ImagePath = "Assets/Images/scene14.png",
+                    Text = "В лесу и на поляне все изменилось: растаял снег, появилась зеленая травка, распустились подснежники."
+                },
+                new Scene
+                {
+                    ImagePath = "Assets/Images/scene15.png",
+                    Text = "Девочка принялась собирать цветы, и вскоре наполнили ими большую корзину."
+                },
+                new Scene
+                {
+                    ImagePath = "Assets/Images/scene16.png",
+                    Text = "Она очень понравилась юному Апрелю, который подарил ей свое колечко. Если приключится беда, нужно бросить колечко, произнести волшебные слова и все двенадцать месяцев придут на помощь."
                 }
             };
         }
@@ -94,7 +119,7 @@ namespace MarshakGame.Views
         {
             if (index < 0 || index >= scenes.Count)
                 return;
-
+            CurrentSceneIndex = index;
             var scene = scenes[index];
 
             try
@@ -112,16 +137,28 @@ namespace MarshakGame.Views
 
         private void NextButton_Click(object sender, RoutedEventArgs e)
         {
-            currentSceneIndex++;
-            if (currentSceneIndex >= scenes.Count)
+            CurrentSceneIndex++;
+            SavedSceneIndex = CurrentSceneIndex; // Сохраняем прогресс
+
+            if (CurrentSceneIndex == 12) // После 12-й сцены (индекс 11) запускаем игру
             {
-                // Конец новеллы – вернуться в меню или что-то ещё
-                if (Window.GetWindow(this) is MainWindow main)
-                    main.NavigateTo(new MenuPage());
+                NavigationService?.Navigate(new FireGamePage());
                 return;
             }
 
-            ShowScene(currentSceneIndex);
+            if (CurrentSceneIndex == 14)
+            {
+                NavigationService?.Navigate(new FlowerGamePage());
+                return;
+            }
+
+            if (CurrentSceneIndex >= scenes.Count)
+            {
+                NavigationService?.Navigate(new MenuPage());
+                return;
+            }
+
+            ShowScene(CurrentSceneIndex);
         }
     }
 }

@@ -11,13 +11,28 @@
   <ItemGroup>
     <None Remove="Assets\Images\10.png" />
     <None Remove="Assets\Images\AboutMarshakBackground.png" />
+    <None Remove="Assets\Images\background.jpg" />
+    <None Remove="Assets\Images\basket_empty.png" />
+    <None Remove="Assets\Images\basket_full.png" />
+    <None Remove="Assets\Images\basket_half.png" />
     <None Remove="Assets\Images\book_background.jpg" />
+    <None Remove="Assets\Images\brevno.png" />
+    <None Remove="Assets\Images\collect.wav" />
+    <None Remove="Assets\Images\fire.png" />
+    <None Remove="Assets\Images\flower1.png" />
+    <None Remove="Assets\Images\flower2.png" />
+    <None Remove="Assets\Images\heart.png" />
+    <None Remove="Assets\Images\logs.png" />
     <None Remove="Assets\Images\MagicWorksImage.jpg" />
     <None Remove="Assets\Images\mau.png" />
     <None Remove="Assets\Images\scene1.png" />
     <None Remove="Assets\Images\scene10.png" />
     <None Remove="Assets\Images\scene11.png" />
     <None Remove="Assets\Images\scene12.png" />
+    <None Remove="Assets\Images\scene13.png" />
+    <None Remove="Assets\Images\scene14.png" />
+    <None Remove="Assets\Images\scene15.png" />
+    <None Remove="Assets\Images\scene16.png" />
     <None Remove="Assets\Images\scene2.png" />
     <None Remove="Assets\Images\scene3.png" />
     <None Remove="Assets\Images\scene4.png" />
@@ -26,13 +41,53 @@
     <None Remove="Assets\Images\scene7.png" />
     <None Remove="Assets\Images\scene8.png" />
     <None Remove="Assets\Images\scene9.png" />
+    <None Remove="Assets\Images\snowball.png" />
+    <None Remove="Assets\Images\snowdrop1.png" />
+    <None Remove="Assets\Images\snowdrop2.png" />
+    <None Remove="Assets\Images\snowdrop3.png" />
+    <None Remove="Assets\Images\winter_forest.png" />
+    <None Remove="Assets\Images\wrong.wav" />
+    <None Remove="Views\background.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="Assets\Images\AboutMarshakBackground.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Images\background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\basket_empty.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\basket_full.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\basket_half.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Assets\Images\book_background.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\brevno.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\collect.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\fire.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\flower1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\flower2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\heart.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\logs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\MagicWorksImage.jpg">
@@ -48,6 +103,18 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\scene12.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\scene13.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\scene14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\scene15.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\scene16.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\scene2.png">
@@ -80,6 +147,28 @@
     <Content Include="Assets\Images\scene9.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Images\snowball.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\snowdrop1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\snowdrop2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\snowdrop3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\winter_forest.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\wrong.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\background.jpg" />
   </ItemGroup>
 
   <ItemGroup>
