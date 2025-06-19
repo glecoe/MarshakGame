@@ -46,5 +46,31 @@ namespace MarshakGame.Properties {
                 this["Fullscreen"] = value;
             }
         }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1920")]
+        public int ResolutionWidth
+        {
+            get { return ((int)(this["ResolutionWidth"])); }
+            set { this["ResolutionWidth"] = value; }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1080")]
+        public int ResolutionHeight
+        {
+            get { return ((int)(this["ResolutionHeight"])); }
+            set { this["ResolutionHeight"] = value; }
+        }
+
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string Resolution
+        {
+            get { return ((string)(this["Resolution"])); }
+            set { this["Resolution"] = value; }
+        }
     }
 }

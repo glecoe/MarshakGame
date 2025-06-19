@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using MarshakGame.Properties;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Navigation;
@@ -10,7 +11,7 @@ namespace MarshakGame.Views
         public MainWindow()
         {
             InitializeComponent();
-
+            LoadSettings();
             // При старте — показываем страницу меню
             MainFrame.Navigate(new MenuPage());
         }
@@ -18,11 +19,30 @@ namespace MarshakGame.Views
         {
             MainFrame.Navigate(page);
         }
+        private void LoadSettings()
+        {
+            // Применяем настройки при запуске
+            if (Settings.Default.Fullscreen)
+            {
+                WindowState = WindowState.Maximized;
+                WindowStyle = WindowStyle.None;
+            }
+            else
+            {
+                Width = Settings.Default.ResolutionWidth;
+                Height = Settings.Default.ResolutionHeight;
+                WindowState = WindowState.Normal;
+                WindowStyle = WindowStyle.SingleBorderWindow;
+            }
+        }
 
         private void OpenSettings_Click(object sender, RoutedEventArgs e)
         {
-            // Открыть окно настроек (можно и как модалку, а можно навигировать в Frame)
             var settings = new SettingsWindow();
+            settings.Closed += (s, args) => {
+                // Применяем изменения после закрытия настроек
+                LoadSettings();
+            };
             settings.Owner = this;
             settings.ShowDialog();
         }

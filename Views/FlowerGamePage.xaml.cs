@@ -20,8 +20,8 @@ namespace MarshakGame.Views
         private List<string> snowdropImages = new() { "Assets/Images/snowdrop1.png", "Assets/Images/snowdrop2.png", "Assets/Images/snowdrop3.png" };
         private List<string> otherFlowerImages = new() { "Assets/Images/flower1.png", "Assets/Images/flower2.png" };
 
-        private SoundPlayer collectSound = new SoundPlayer("Assets/Images/collect.wav");
-        private SoundPlayer wrongSound = new SoundPlayer("Assets/Images/wrong.wav");
+        private string collectSoundPath = "/Assets/Images/collect.wav";
+        private string wrongSoundPath = "/Assets/Images/wrong.wav";
 
         public FlowerGamePage()
         {
@@ -29,10 +29,11 @@ namespace MarshakGame.Views
             StartScreen.Visibility = Visibility.Visible; // Показываем стартовый экран
         }
 
-        private void SafePlay(SoundPlayer player)
+        private void SafePlay(string soundPath)
         {
-            try { player.Play(); } catch { }
+            try { AudioManager.PlaySound(soundPath); } catch { }
         }
+
 
         // Новый метод: переход на экран с подсказкой
         private void StartHintScreen_Click(object sender, RoutedEventArgs e)
@@ -126,7 +127,7 @@ namespace MarshakGame.Views
 
             if ((string)img.Tag == "Snowdrop")
             {
-                SafePlay(collectSound);
+                SafePlay(collectSoundPath);
                 _score++;
                 UpdateScoreText();
                 UpdateBasket();
@@ -136,7 +137,7 @@ namespace MarshakGame.Views
             }
             else
             {
-                SafePlay(wrongSound);
+                SafePlay(wrongSoundPath);
                 _lives--;
                 if (HeartsPanel.Children.Count > 0)
                     HeartsPanel.Children.RemoveAt(0);
