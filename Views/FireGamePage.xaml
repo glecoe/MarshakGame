@@ -26,7 +26,7 @@
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                         <TextBlock Text="Волшебный костёр" FontSize="72" Foreground="#FFFF9900" 
                                    TextAlignment="Center" Margin="0,0,0,30"/>
-                        <TextBlock Text="Поддержи огонь 30 секунд, ловя дрова и избегая снежки!" 
+                        <TextBlock Text="Поддержи огонь 30 секунд, ловя дрова и уворачиваясь от снежков!" 
                                    FontSize="36" Foreground="White" TextAlignment="Center" Margin="0,0,0,30"/>
                         <Button Content="Начать игру" FontSize="36" Padding="40,20" 
                                 Background="#FF4A2E1D" Foreground="White" 

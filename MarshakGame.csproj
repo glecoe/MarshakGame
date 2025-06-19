@@ -17,6 +17,13 @@
     <None Remove="Assets\Images\basket_half.png" />
     <None Remove="Assets\Images\book_background.jpg" />
     <None Remove="Assets\Images\brevno.png" />
+    <None Remove="Assets\Images\button_back.png" />
+    <None Remove="Assets\Images\button_exit.png" />
+    <None Remove="Assets\Images\button_marshak.png" />
+    <None Remove="Assets\Images\button_next.png" />
+    <None Remove="Assets\Images\button_Play.png" />
+    <None Remove="Assets\Images\button_proizvedenia.png" />
+    <None Remove="Assets\Images\button_settings.png" />
     <None Remove="Assets\Images\collect.wav" />
     <None Remove="Assets\Images\fire.png" />
     <None Remove="Assets\Images\flower1.png" />
@@ -70,6 +77,27 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\brevno.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_back.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_exit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_marshak.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_next.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_Play.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_proizvedenia.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\button_settings.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\collect.wav">

@@ -4,20 +4,20 @@
       Title="MagicWorksPage">
 
     <Grid>
-        <!-- Фон – твоя готовая картинка -->
+        <!-- Фон -->
         <Image Source="/Assets/Images/MagicWorksImage.jpg"
                Stretch="UniformToFill"
                Panel.ZIndex="0"/>
 
-        <!-- Кнопка возврата -->
-        <Button Content="Вернуться в меню"
-                Width="230"
-                Height="58"
-                FontSize="18"
-                HorizontalAlignment="Right"
-                VerticalAlignment="Bottom"
-                Margin="0,0,557,254"
-                Click="ReturnToMenu_Click"
-                Panel.ZIndex="1" FontWeight="Bold" Cursor="Hand"/>
+        <!-- Кнопка назад -->
+        <Image Source="/Assets/Images/button_back.png"
+               Width="200"
+               Height="75"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Top"
+               Margin="20"
+               Cursor="Hand"
+               MouseLeftButtonDown="ReturnToMenu_Click"
+               Panel.ZIndex="1"/>
     </Grid>
 </Page>

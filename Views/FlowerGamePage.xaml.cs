@@ -22,10 +22,11 @@ namespace MarshakGame.Views
 
         private SoundPlayer collectSound = new SoundPlayer("Assets/Images/collect.wav");
         private SoundPlayer wrongSound = new SoundPlayer("Assets/Images/wrong.wav");
+
         public FlowerGamePage()
         {
             InitializeComponent();
-            StartButton_Click(null, null); // Автоматически начинаем игру
+            StartScreen.Visibility = Visibility.Visible; // Показываем стартовый экран
         }
 
         private void SafePlay(SoundPlayer player)
@@ -33,9 +34,17 @@ namespace MarshakGame.Views
             try { player.Play(); } catch { }
         }
 
+        // Новый метод: переход на экран с подсказкой
+        private void StartHintScreen_Click(object sender, RoutedEventArgs e)
+        {
+            StartScreen.Visibility = Visibility.Collapsed;
+            HintScreen.Visibility = Visibility.Visible; // Показываем подсказку
+        }
+
+        // Начало игры после подсказки
         private void StartButton_Click(object sender, RoutedEventArgs e)
         {
-            StartButton.Visibility = Visibility.Collapsed;
+            HintScreen.Visibility = Visibility.Collapsed;
             InitGame();
         }
 
@@ -75,8 +84,8 @@ namespace MarshakGame.Views
                 Rect newRect;
                 do
                 {
-                    x = _random.Next(100, 1720);
-                    y = _random.Next(600, 850);
+                    x = _random.Next(100, 1450);
+                    y = _random.Next(600, 900);
                     newRect = new Rect(x, y, 100, 100);
                 } while (occupied.Any(r => r.IntersectsWith(newRect)) || (x < 300 && y > 800));
 
@@ -139,16 +148,35 @@ namespace MarshakGame.Views
 
         private void EndGame(bool victory)
         {
+            GameOverScreen.Visibility = Visibility.Visible;
+            
             if (victory)
             {
-                if (NavigationService != null)
-                {
-                    NavigationService.Navigate(new GamePage { CurrentSceneIndex = 14 });
-                }
+                GameResultText.Text = "Победа!";
+                NextButton.Visibility = Visibility.Visible; // Показываем кнопку "Дальше"
             }
             else
             {
-                InitGame();
+                GameResultText.Text = "Попробуй ещё раз!";
+                NextButton.Visibility = Visibility.Collapsed;
+            }
+            
+            FinalScoreText.Text = $"Собрано подснежников: {_score}/{_targetCount}";
+        }
+
+        // Рестарт игры
+        private void RestartGame_Click(object sender, RoutedEventArgs e)
+        {
+            GameOverScreen.Visibility = Visibility.Collapsed;
+            InitGame();
+        }
+
+        // Продолжение истории (переход на другую страницу)
+        private void ContinueStory_Click(object sender, RoutedEventArgs e)
+        {
+            if (NavigationService != null)
+            {
+                NavigationService.Navigate(new GamePage { CurrentSceneIndex = 14 });
             }
         }
 

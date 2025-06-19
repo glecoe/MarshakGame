@@ -5,45 +5,116 @@
       Background="Transparent">
 
     <Grid>
-        <!-- Два столбца: левая скрытая страница, правая – меню -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="500" />
             <ColumnDefinition Width="1450" />
         </Grid.ColumnDefinitions>
 
-        <!-- Левая страница (можно вставить фон или оставить чистой) -->
-        <Border Grid.Column="0" Background="Transparent">
-            <!-- Можно добавить картинку фона, иллюстрацию и т.п. ici -->
-        </Border>
+        <!-- Левая часть (можно добавить фон) -->
+        <Border Grid.Column="0" Background="Transparent"/>
 
-        <!-- Правая страница (центрированное меню) -->
+        <!-- Правая часть с меню -->
         <StackPanel Grid.Column="1"
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
-                    Width="600">
-            <TextBlock Text="Добро пожаловать в волшебную книгу"
-               FontSize="26"
-               FontWeight="Bold"
-               Foreground="DarkSlateBlue"
-               TextAlignment="Center"
-               Margin="0,0,0,40"/>
+                    Width="600"
+                    Margin="100,50,0,0">
 
-            <Button Content="Начать игру"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Click="StartGame_Click"
-                    Margin="0,0,0,90"/>
-            <Button Content="Волшебные произведения"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Click="ShowWorks_Click"
-                    Margin="0,0,0,90"/>
-            <Button Content="О С.Я. Маршаке"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Click="AboutMarshak_Click"
-                    Margin="0,0,0,90"/>
-            <Button Content="Выход"
-                    Style="{StaticResource MenuButtonStyle}"
-                    Click="Exit_Click"
-                    Margin="0,0,0,90"/>
+            <!-- Кнопка "Начать игру" -->
+            <Image Source="/Assets/Images/button_Play.png" 
+                   Width="400" 
+                   Height="80"
+                   Cursor="Hand"
+                   Margin="0,0,0,50"
+                   MouseLeftButtonDown="StartGame_Click">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="10" Opacity="0.8" ShadowDepth="2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+
+            <!-- Кнопка "Волшебные произведения" -->
+            <Image Source="/Assets/Images/button_proizvedenia.png" 
+                   Width="400" 
+                   Height="80"
+                   Cursor="Hand"
+                   Margin="0,0,0,50"
+                   MouseLeftButtonDown="ShowWorks_Click">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="10" Opacity="0.8" ShadowDepth="2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+
+            <!-- Кнопка "О С.Я. Маршаке" -->
+            <Image Source="/Assets/Images/button_marshak.png" 
+                   Width="400" 
+                   Height="80"
+                   Cursor="Hand"
+                   Margin="0,0,0,50"
+                   MouseLeftButtonDown="AboutMarshak_Click">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="10" Opacity="0.8" ShadowDepth="2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
+
+            <!-- Кнопка "Выход" -->
+            <Image Source="/Assets/Images/button_exit.png" 
+                   Width="400" 
+                   Height="80"
+                   Cursor="Hand"
+                   Margin="0,0,0,50"
+                   MouseLeftButtonDown="Exit_Click">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="10" Opacity="0.8" ShadowDepth="2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
         </StackPanel>
     </Grid>
 </Page>
