@@ -1,4 +1,6 @@
 ﻿using MarshakGame.Properties;
+using System.Runtime.InteropServices;
+using System.Windows.Interop;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
@@ -8,11 +10,26 @@ namespace MarshakGame.Views
 {
     public partial class MainWindow : Window
     {
+        private const int HWND_TOPMOST = -1;
+        private const int SWP_SHOWWINDOW = 0x0040;
+        [DllImport("user32.dll")]
+        private static extern bool SetWindowPos(IntPtr hWnd, int hWndInsertAfter,
+                                      int X, int Y, int cx, int cy, uint uFlags);
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += (s, e) => {
+                if (Settings.Default.Fullscreen)
+                {
+                    // Обновляем состояние после загрузки
+                    var hwnd = new WindowInteropHelper(this).Handle;
+                    SetWindowPos(hwnd, HWND_TOPMOST, 0, 0,
+                                (int)SystemParameters.PrimaryScreenWidth,
+                                (int)SystemParameters.PrimaryScreenHeight,
+                                SWP_SHOWWINDOW);
+                }
+            };
             LoadSettings();
-            // При старте — показываем страницу меню
             MainFrame.Navigate(new MenuPage());
         }
         public void NavigateTo(Page page)
@@ -21,18 +38,22 @@ namespace MarshakGame.Views
         }
         private void LoadSettings()
         {
-            // Применяем настройки при запуске
             if (Settings.Default.Fullscreen)
             {
-                WindowState = WindowState.Maximized;
+                WindowState = WindowState.Normal; // Важно сначала сбросить
                 WindowStyle = WindowStyle.None;
+                ResizeMode = ResizeMode.NoResize;
+                WindowState = WindowState.Maximized;
+                Topmost = true; // Дополнительная страховка
             }
             else
             {
-                Width = Settings.Default.ResolutionWidth;
-                Height = Settings.Default.ResolutionHeight;
                 WindowState = WindowState.Normal;
                 WindowStyle = WindowStyle.SingleBorderWindow;
+                ResizeMode = ResizeMode.CanResize;
+                Topmost = false;
+                Width = Settings.Default.ResolutionWidth;
+                Height = Settings.Default.ResolutionHeight;
             }
         }
 
