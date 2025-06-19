@@ -37,6 +37,9 @@
     <Compile Update="Views\StoryWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\TwelveMonthsQuizPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\AboutMarshakPage.xaml">
@@ -70,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\StoryWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\TwelveMonthsQuizPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

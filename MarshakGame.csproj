@@ -71,6 +71,7 @@
     <None Remove="Assets\Images\snowdrop2.png" />
     <None Remove="Assets\Images\snowdrop3.png" />
     <None Remove="Assets\Images\star.png" />
+    <None Remove="Assets\Images\Test_Game_Bg.png" />
     <None Remove="Assets\Images\winter_forest.png" />
     <None Remove="Assets\Images\wrong.wav" />
     <None Remove="Views\background.jpg" />
@@ -258,6 +259,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\star.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Images\Test_Game_Bg.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Images\winter_forest.png">

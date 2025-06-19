@@ -80,7 +80,7 @@ namespace MarshakGame.Views
 
             score = 0;
             fireSize = 250;
-            timeLeft = 2;
+            timeLeft = 30;
 
             FireImage.Width = fireSize;
             FireImage.Height = fireSize * 1.5;

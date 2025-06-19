@@ -61,6 +61,7 @@ namespace MarshakGame.Views
             if (Application.Current.MainWindow is MainWindow mainWindow)
             {
                 mainWindow.MainFrame.Navigate(new MenuPage());
+                GamePage.SavedSceneIndex = 0;
             }
             Close();
         }

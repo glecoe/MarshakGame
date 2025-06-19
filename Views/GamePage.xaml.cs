@@ -231,6 +231,12 @@ namespace MarshakGame.Views
                 return;
             }
 
+            else if (CurrentSceneIndex == 31)
+            {
+                NavigationService?.Navigate(new TwelveMonthsQuizPage());
+                return;
+            }
+
             if (CurrentSceneIndex >= scenes.Count)
             {
                 NavigationService?.Navigate(new MenuPage());
