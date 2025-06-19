@@ -21,14 +21,31 @@
                    Background="Transparent"/>
 
             <!-- Постоянная кнопка Настройки -->
-            <Button Content="⚙"
-                    ToolTip="Настройки"
-                    Width="50" Height="50"
-                    FontSize="24"
-                    HorizontalAlignment="Right"
-                    VerticalAlignment="Top"
-                    Margin="20"
-                    Click="OpenSettings_Click"/>
+            <Image Source="/Assets/Images/button_settings.png"
+                   Width="65"
+                   Height="65"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="20"
+                   Cursor="Hand"
+                   MouseLeftButtonDown="OpenSettings_Click"
+                   ToolTip="Настройки">
+                <Image.Style>
+                    <Style TargetType="Image">
+                        <Setter Property="Opacity" Value="0.9"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Opacity" Value="1"/>
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect BlurRadius="10" Opacity="0.6" ShadowDepth="2"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+            </Image>
 
         </Grid>
     </Viewbox>
